@@ -3,3 +3,16 @@
   display: flex;
   justify-content: center;
 }
+// Hide scroll bar but keep functionality
+.three-scroll{
+  div:last-child{
+    background-color: "black";
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    &::-webkit-scrollbar{
+      display:none;
+    }
+
+  }
+
+}
