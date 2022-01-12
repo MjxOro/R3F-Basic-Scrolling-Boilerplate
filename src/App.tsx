@@ -33,7 +33,7 @@ const PageScroll = () => {
   useFrame((state, delta) => {
     const offset = 4 * viewport.height * scrollHook.offset;
     //Returns true FROM 2/4 of scroll TO end of scroll
-    const show = scrollHook.visible(2 / 4, 2 / 4);
+    const show = scrollHook.visible(2 / 4, 3 / 4);
     //Helper To get a 0-1 value FROM 2.2/4 of the scroll TO end of scroll
     //This would make object manipulation at that certain scroll location
     const r1 = scrollHook.range(2.2 / 4, 1.8 / 4) * numOfProjects;
